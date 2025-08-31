@@ -1,13 +1,5 @@
-import { ScreenContent } from "components/ScreenContent";
-import { StatusBar } from "expo-status-bar";
-
-import "./global.css";
+import WebView from "react-native-webview";
 
 export default function App() {
-    return (
-        <>
-            <ScreenContent title="Home" path="App.tsx"></ScreenContent>
-            <StatusBar style="auto" />
-        </>
-    );
+    return <WebView source={{ uri: "naver.com" }} style={{ flex: 1 }} />;
 }
